@@ -1,0 +1,197 @@
+
+h1, h2 {
+    font-weight: normal;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  a {
+    color: #42b983;
+  }
+
+  .ui-wsng-temp{
+    margin: 0px;
+    height: 100%;
+  }
+
+  .ui-wsng-bg{
+    background-repeat:no-repeat ;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    background: url("/static/img/background/bg.jpg");
+  }
+
+.ui-wsng-margin-t10{
+  margin-top: 10px;
+}
+
+.ui-wsng-margint15{
+  margin-top: 15px;
+}
+
+.ui-wsng-margin-t20{
+  margin-top: 20px;
+}
+.ui-wsng-margin-t60{
+  margin-top: 60px;
+}
+
+.ui-wsng-padding-t200{
+  padding-top: 200px;
+}
+
+.ui-wsng-font12{
+  font-size: 12px;
+}
+
+.ui-wsng-font13{
+  font-size: 13px;
+}
+
+.ui-wsng-font14{
+  font-size: 14px;
+}
+
+.ui-wsng-font15{
+  font-size: 15px;
+}
+
+.ui-wsng-font16{
+  font-size: 16px;
+}
+
+.ui-wsng-font17{
+  font-size: 17px;
+}
+
+.ui-wsng-font18{
+  font-size: 18px;
+}
+
+.ui-wsng-font19{
+  font-size: 19px;
+}
+
+.ui-wsng-font20{
+  font-size: 20px;
+}
+
+.ui-wsng-font21{
+  font-size: 21px;
+}
+
+.ui-wsng-font22{
+  font-size: 22px;
+}
+
+.ui-wsng-colorred{
+  color: red;
+}
+
+.ui-wsng-coloryellow{
+  color: yellow;
+}
+
+.ui-wsng-colorblue{
+  color: blue;
+}
+
+.ui-wsng-colorwhite{
+  color: white;
+}
+
+
+#login_frame {
+    width: 400px;
+    height: 260px;
+    padding: 13px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+
+    background-color: rgba(240, 255, 255, 0.5);
+
+    border-radius: 10px;
+    text-align: center;
+}
+
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wsng_login_logo {
+    height: 20px;
+    width: 20px;
+}
+
+#image_logo {
+    margin-top: 22px;
+}
+
+.label_input {
+    font-size: 14px;
+    font-family: 宋体;
+
+    width: 65px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+
+    color: white;
+    background-color: #3CD8FF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.text_field {
+    width: 278px;
+    height: 28px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+
+#btn_login {
+    font-size: 14px;
+    font-family: 宋体;
+
+    width: 120px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+
+    color: white;
+    background-color: #3BD9FF;
+    border-radius: 6px;
+    border: 0;
+
+    float: left;
+}
+
+#forget_pwd {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    top: 5px;
+
+}
+
+#forget_pwd:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#login_control {
+    padding: 0 28px;
+}
