@@ -1,0 +1,324 @@
+.cmt:hover {
+    color: #00A7E0;
+  }
+
+  span i{
+    margin-top: 2px;
+  }
+
+  .i_name input {
+    height: 30px;
+    border-radius: 5px;
+    border: .1px solid;
+  }
+
+  .markdown-data {
+    --i-opacity:1;
+    --i-height: 802px;
+
+  }
+  .md {
+    --i-margin:-2000px
+  }
+
+  .markdown-ct{
+    position: absolute;
+    /* height: 850px; */
+    width: 80%;
+    /* border: 1px solid; */
+    margin-left: var(--i-margin);
+    transition: all .3s ease-in-out;
+  }
+
+  #magazine {
+    /* margin-top: 150px; */
+    width: 1240px;
+    height: var(--i-height);
+    /* opacity: var(--i-opacity); */
+    margin-left: var(--left-pos);
+    /* display: var(--i-block); */
+
+  }
+
+  .i_book_cv h2{
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+  .i_books .i_book_cv p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 100px;
+  }
+
+  .i_memo_ct {
+    background-image: url(../../../static/img/book/memo.jpg);
+    background-size: 100% 95%;
+    background-position: initial;
+    background-repeat: no-repeat;
+    transition: all .5s ease-in-out;
+  }
+
+  .i_memo_ct:hover {
+    transform: translateY(-5px);
+    transition: all .5s ease-in-out;
+  }
+
+  .i_memo_ct:hover p{
+    color: white;
+    transition: all .5s ease-in-out;
+  }
+
+  .i_memo_ct p {
+    margin: 0;
+    position: absolute;
+    top: 24px;
+    left: 30px;
+    color: #888;
+    font-size: 21px;
+    font-family: mk;
+  }
+
+  .i_memo {
+    height: 80px;
+    width: 200px;
+  }
+  .i_markdown {
+    margin-top: 40px;
+    max-height: 600px ;
+    overflow: scroll;
+    padding: 10px 15px;
+  }
+
+  .i_books .i_markdown p {
+    margin-top: 0;
+  }
+
+  .i_book_ct h5 {
+    margin-top: 100px;
+    font-size: 14px;
+    color: #888;
+  }
+  .i_book_cv {
+    position: unset;
+  }
+
+  .i_book_cv p {
+    font-family:mk;
+  }
+
+  .i_catalogue h1{
+     float: left;
+  }
+
+  .i_catalogue h4 {
+    color: #888;
+    font-size: 16px;
+    margin-top: 100px;
+    font-family: ttbold;
+    text-align: center;
+  }
+
+ /* .i_radius1::after{
+    content: '';
+    width: 100%;
+    height: 4.375rem;
+    background: #fff;
+    left: -25%;
+    bottom: -2.875rem;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 2;
+  } */
+
+  .i_catalogue img{
+    margin-left: 7%;
+    margin-top: 20px;
+    width: 500px;
+    height: 500px;
+  }
+
+  .i_catalogue {
+    padding: 20px;
+    width: calc(100% - 40px);
+    /* position: relative; */
+  }
+  .sidebar {
+      --left-pos: -100px;
+      --i-radius0:10px 20px 20px 10px;
+      --i-radius1:20px 10px 10px 20px;
+  }
+
+  .i_books_bg1 {
+    background: linear-gradient(90deg,#cccbd6, #F7F7F9);
+  }
+  .i_books_bg0{
+    background-color: #F7F7F9;
+   }
+  .i_books_bg2{
+   background: linear-gradient(90deg,#F7F7F9,#cccbd6);
+  }
+
+
+  .i_radius0 {
+    border-radius: var(--i-radius0);
+  }
+  .i_radius1 {
+    border-radius: var(--i-radius1);
+  }
+
+  .i_b {
+    transition: all 1s ease;
+    margin: auto;
+    /* margin-top: 100px; */
+    margin-left: var(--left-pos);
+  }
+
+  html {
+    /* background: url(../../../static/img/background/wood.jpg) no-repeat; */
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .go_read{
+    font-family:mk;
+    bottom: 20px;
+    position: absolute;
+    right: 30px;
+    font-size: 20px;
+    transition: all .3s linear;
+  }
+  .go_read:hover{
+    transition: all .3s linear;
+    transform:translateY(-5PX) ;
+  }
+
+  .i_books {
+    border: .1px solid #F7F7F9;
+    /* border-radius: 10px 20px 20px 10px; */
+    /* box-shadow: 17px -19px 9px -3px rgb(0 0 0 / 20%); */
+    /* padding: 30px; */
+    height: 800px;width: 618px;position: relative;
+  }
+
+  .i_books h1 {
+    font-family: ttbold;
+    font-size: 45px;
+    margin-top: 200px;
+    margin-left: 30px;
+  }
+  .i_books p {
+    margin-top: 18%;
+    margin-left: 100px;
+    font-size: 18px;
+    color: #888;
+    padding: 0 10px;
+  }
+
+
+  .book_content {
+     margin-bottom: 20px;
+     /* max-width: 800px; */
+     /* padding: 0 10px; */
+     /* margin-left: auto; */
+     /* margin-right: auto; */
+     background-color: white;
+     text-align: left;
+     /* background-color: transparent!important; */
+     /* background-color: #545554; */
+
+  }
+
+
+
+  .current-page {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+
+}
+.even-numbers {
+      width: 30px;
+      height: 30px;
+      background: #F7F7F9;
+      /* color: #fff; */
+      right: 0;
+      position: absolute;
+      bottom: 0px;
+      line-height: 30px;
+      text-align: center;
+      z-index: 1;
+      border-radius: 0 0 20px 0;
+      border-right: .1px solid #F7F7F9;
+      border-bottom: .1px solid #F7F7F9;
+    }
+    .odd-number {
+      position: absolute;
+      bottom: 0px;
+      width: 30px;
+      height: 30px;
+      background: #F7F7F9;
+      /* color: #fff; */
+      line-height: 30px;
+      text-align: center;
+      z-index: 1;
+      border-radius: 0 0 0 20px;
+      border-left: .1px solid #F7F7F9;
+      border-bottom: .1px solid #F7F7F9;
+    }
+  #magazine .shadow {
+   -webkit-box-shadow: 0 4px 10px #666;
+    -moz-box-shadow: 0 4px 10px #666;
+    -ms-box-shadow: 0 4px 10px #666;
+    -o-box-shadow: 0 4px 10px #666;
+    box-shadow: 0 4px 10px #666;
+  }
+
+  #magazine .turn-page {
+    background-color: #ccc;
+    background-size: 100% 100%;
+    /* border-radius: 20px 20px 20px 20px; */
+  }
+ /* .turn-page-wrapper {
+     /* border-radius: 20px 20px 20px 20px; */
+    /* background-color: #000000; */
+  /* } */
+  .bookmark {
+    margin-left: 633px;
+    font-size: 20px;
+    writing-mode: tb-rl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 47px;
+
+  }
+  .item:nth-child(2n) {
+    background: #ccc;
+    width: 45px;
+    height: 150px;
+  }
+  .item {
+    width: 45px;
+    height: 160px;
+    background: red;
+  }
+  .item:nth-child(1) {
+    z-index: 4;
+    text-shadow: 6px 6px 6px #999;
+  }
+  .item:nth-child(2) {
+    z-index: 3;
+    text-shadow: 6px 6px 6px #333;
+  }
+  .item:nth-child(3) {
+    z-index: 2;
+    text-shadow: 6px 6px 6px #333;
+  }
+  .item:nth-child(4) {
+    z-index: 1;
+    text-shadow: 6px 6px 6px #333;
+  }
