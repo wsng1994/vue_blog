@@ -5,7 +5,7 @@ import { Message } from 'element-ui'
 import Cookies from 'js-cookie'
 // 统一请求路径前缀
 // const base = '/ccma-server/api'   // 服务器地址/
-const base = 'http://121.5.183.117:8081/blog'   // 本地///
+const base = 'http://localhost:8081/blog'   // 本地///
 // 超时设定
 axios.defaults.timeout = 15000
 
