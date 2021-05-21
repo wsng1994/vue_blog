@@ -1,0 +1,133 @@
+.ui_vstInf {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    position: relative;
+  }
+
+  .cmt_txt {
+    padding: 21px 21px 20px;position: relative;resize: vertical;
+    display: block;
+    float: none;
+    height: 180px;
+    color: #535a63;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: transparent;width:calc(100% - 44px);font-size: 14px;
+  }
+
+  .cmt_count {
+    font-size: 13px;
+    font-weight: 400;
+    color: #909090;
+  }
+
+  .cmt_main {
+    max-width: 860px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    color: #7d7d7d;
+    font-weight: 400;font-weight: 400;
+  }
+
+  .cmt_tit {
+    text-align: left; margin-bottom: 40px;
+  }
+
+  .comments_content {
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+  }
+
+  .con_ct {
+    overflow: hidden;
+    transition: height 0s ease-out;
+  }
+
+
+  .bt_t {
+    animation: bottom20 .5s;
+    border: none;
+    background: #898c7b;
+    color: #fff;
+    font-weight: 500;
+    padding: 6px 18px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: inline-block;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+    height: 37px;
+  }
+
+  .ui_ipt_bg {
+
+    background-image: url(../../img/artcle/nerv.jpeg);
+    background-repeat:no-repeat ;
+    background-size: 23% 84%;
+    background-position: 99% 86%;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+
+  .vst_child {
+    margin: 0 0 40px 1%;
+    --widthA: 98%;
+    --widthB: calc(var(--widthA) - 71px);
+    --widthC: calc(var(--widthB)/3);
+    width: var(--widthC);
+    margin-top: 10px;
+  }
+
+  .vst_child input{
+    padding: 21px 21px 20px;
+    font-size: 14px;
+    width: calc(98% - 42px);
+  }
+
+  .ui_profile_img_c {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url(../../img/login/profile.jpg);
+    background-repeat:no-repeat ;
+    background-size:cover;
+    background-position: 50% 50%;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  .ui_profile_p_c {
+    width:60px;
+    height: 100%;
+    position: absolute;
+    left: 4px;
+    line-height: 79px;
+  }
+
+  .cmt_box:hover  p span{
+    opacity: 1;
+  }
+  .p_span span {
+    font-size: 12px;
+    display: block;
+    margin-left: 10px;
+    float: right;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #00A7E0;
+    line-height: 20px;
+    padding: 0 6px;
+    border-radius: 3px;
+    opacity: 0;
+  }
+
+  .cmt_pro img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }

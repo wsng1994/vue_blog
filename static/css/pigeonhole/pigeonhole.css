@@ -1,0 +1,130 @@
+.b_h {
+      display: none;
+      opacity: 0;
+      transition: 2s linear
+    }
+    .a_s {
+      display: block;
+      opacity: 1;
+      transition: 2s linear
+    }
+
+    .ui_show {
+      display: block;
+    }
+
+    .brick {
+      margin-left: 30px;
+    }
+
+    span.time {
+        float: right;
+        color: #cacaca;
+    }
+
+    /* .ar-circle {
+
+    } */
+
+    span i {
+      margin-right: 5px;
+    }
+
+    .brick a {
+      color: #7d7d7d;
+      padding: 20px;
+      background: #f5f5f5;
+      margin-bottom: 20px;
+      display: block;
+      letter-spacing: 0;
+      text-align: left;
+    }
+    .arrow-left-ar {
+      width: 0;
+      height: 0;
+      display: block;
+      float: left;
+      margin-top: 10px;
+      border-left: 20px solid transparent;
+      border-bottom: 20px solid #f5f5f5;
+      margin-left: 11px;
+    }
+
+    .ar-circle {
+      height: 10px;
+      width: 10px;
+      background: orange;
+      display: inline-block;
+      position: absolute;
+      left: -5px;
+      margin-top: 22px;
+      border-radius: 100px;
+    }
+    .ar-time-font h3:hover {
+      color: #ddd;
+          cursor: pointer;
+    }
+
+    .ar-time-font h3 {
+      letter-spacing: 2px;
+      font-style: italic;
+      font-size: 22px;
+      font-weight: bold;
+      color: orange;
+      margin-left: 30px;
+      margin-top: 50px;
+      text-align: left;
+    }
+
+    .ar-time i {
+        padding: 10px;
+        border-radius: 100px;
+        background: orange;
+        color: #fff;
+    }
+
+    .ar-time {
+      position: absolute;
+      left: -18px;
+      /* top: px; */
+      margin-top: 3px;
+    }
+
+    .archives-content {
+      position: relative;
+      border-left: 1px dashed #f5f5f5;
+    }
+
+    .ui_timer_container {
+      max-width: 800px;
+      padding: 0 10px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: transparent!important;
+      margin-top: 70px;
+    }
+
+    .art_bg h1 {
+      /* font-family: jpx; */
+      color: #D0D3D6;
+      font-size: 40px;
+      font-weight: 500;
+      margin: auto;
+      padding:150px;
+      border: 0;
+    }
+
+    .art_bg {
+      background-size: 100% 130%;
+      background-image: url(../../../static/img/artcle/trace.jpeg);
+      background-position: center;
+    }
+
+    
+    .hhhh{
+      height: 20px;
+      width: 10px;
+      position: absolute;
+      top: 93%;
+      color: transparent;
+    }
