@@ -115,7 +115,7 @@
 
   .art_bg {
     background-size: 100% 130%;
-    background-image: url(../../../static/img/artcle/trace.jpeg);
+    background-image: url(../../../static/img/artcle/lol-kt.jpeg);
     background-position: center;
   }
 

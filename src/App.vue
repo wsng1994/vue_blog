@@ -9,6 +9,8 @@
   import Vue from 'vue'
   import Viewer from 'v-viewer'
   import 'viewerjs/dist/viewer.css'
+  import ElementUI from 'element-ui';
+  import 'element-ui/lib/theme-chalk/index.css';
   Vue.use(Viewer)
   Viewer.setDefaults({
     Options: { 'inline': false, 'button': true, 'navbar': true, 'title': true, 'toolbar': true, 'tooltip': true, 'movable': true, 'zoomable': true, 'rotatable': true, 'scalable': true, 'transition': true, 'fullscreen': true, 'keyboard': true, 'url': 'data-source' }
@@ -35,10 +37,11 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
   height: 100%;
-  background-image: url(../static/img/background/violet.jpeg);
+  /* background-image: url(../static/img/background/violet.jpeg); */
+  background-image: url(../static/img/background/ff14.png);
   background-repeat: no-repeat;
   background-size:cover;
   -moz-background-size:100% 100%;

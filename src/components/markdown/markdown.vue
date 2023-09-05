@@ -15,7 +15,7 @@
 
 <script>
   	// import Vue from 'vue'
-import mavonEditor from 'mavon-editor'
+// import mavonEditor from 'mavon-editor'
 import { formatDateFull } from '@/assets/utils/dateUtils'
 
 

@@ -118,6 +118,7 @@ export default {
           id:0
         }).then((res) => {
            this.musicList = res.songList
+           console.log(this.musicList)
           }
         )
     },
