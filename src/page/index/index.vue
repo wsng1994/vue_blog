@@ -209,6 +209,9 @@ export default {
     }
   },
   mounted () {
+    
+    
+    
     this.createLrc()
     let _this = this
     this.createLrc()

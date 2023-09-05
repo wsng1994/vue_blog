@@ -6,7 +6,10 @@ import router from './router'
 import 'jquery'
 import hljs from "highlight.js";
 import "highlight.js/styles/atelier-cave-dark.css";
-import mavonEditor from 'mavon-editor'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+import mavonEditor from 'mavon-editor';
+Vue.use(ElementUI)
 Vue.use(mavonEditor)
 Vue.config.productionTip = false
 

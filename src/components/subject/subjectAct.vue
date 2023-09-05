@@ -78,7 +78,9 @@
                  <span>&nbsp;发布于 {{item.create_time|formatDate}}&nbsp;</span>
                  <i class="icon-fire"></i>
                </div>
-               <h3 class="p_title" @click="goBriefsInfo(item.id)"> {{item.title}} </h3>
+               <div v-bind:class="{u_tl:index%2==0,u_tr:index%2==1}">
+               <h3 class="p_title" @click="goBriefsInfo(item.id)"> {{item.title}}</h3>
+               </div>
                <div class="ui_act_readinfo" v-bind:class="{u_tl:index%2==0,u_tr:index%2==1}">
                    <i class="icon-eye"></i>
                    <span>{{item.visits}}&nbsp;热度</span>
@@ -87,8 +89,8 @@
                    <i class="icon-github"></i>
                    <span>开源项目</span>
                </div>
-               <div class="ui_act_content">
-                   <p>
+               <div class="ui_act_content" >
+                   <p v-bind:class="{u_tl:index%2==0,u_tr:index%2==1}">
                      {{item.summary}}
                    </p>
                </div>
@@ -238,7 +240,9 @@ export default {
     border-radius: 25px;
     left: calc(50% - 60px);
     color: #ADADAD;
+    text-align: center;
   }
+
 
   .u_fr {
     float: right;
@@ -306,7 +310,8 @@ export default {
   }
 
   .ui_act_readinfo {
-    padding: 0 30px 0;
+    padding: 0 20px 0 30px;
+
   }
 
   .ui_act_readinfo i{
@@ -330,6 +335,8 @@ export default {
     -webkit-line-clamp: 2;
     overflow: hidden;
     word-wrap: break-word;
+    /* text-align: center; */
+    padding: 0 30px;
   }
 
 
@@ -344,7 +351,7 @@ export default {
 
   .ui_post_date {
     transition: background 1s;
-    padding: 30px 30px 0px;
+    padding: 30px 44px 0px 30px;
     color: #888;
     font-size: 12px;
 

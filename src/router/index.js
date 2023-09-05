@@ -24,6 +24,10 @@ import clickhouseData from '@/components/clickhouse/clickhouseData.vue'
 
 import logctx from '@/components/laboratory/logctx.vue'
 
+import transfer from '@/components/laboratory/retransform.vue'
+
+import codeLaboratory from '@/components/laboratory/codeLaboratory.vue'
+
 
 Vue.use(Router)
 
@@ -36,6 +40,16 @@ Router.prototype.push = function push (to) {
 
 export default new Router({
   routes: [
+    {
+      path: '/codeLaboratory',
+      name: 'codeLaboratory',
+      component: codeLaboratory
+    },
+	  {
+	    path: '/transfer',
+	    name: 'retransform',
+	    component: transfer
+	  },
     {
       path: '/logctx',
       name: 'logctx',

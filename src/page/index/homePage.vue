@@ -124,7 +124,7 @@ export default {
       this.$router.push({path:'/books'})
     },
     goCode() {
-      alert("暂未开发！")
+      this.$router.push({path:'/codeLaboratory'})
     },
     //监听页面滚动
     scrollHander () {

@@ -2,7 +2,7 @@
   <div  class="ui_n_header1 header_bg1" style="min-width: 1024px;">
     <div class="ui_n_top">
       <div class="ui_author">
-       <h2 style="margin: 0;font-family:jpx;">寄余生</h2>
+       <h2 style="margin: 0;font-family:jpx;">哈哈哈</h2>
       </div>
     </div>
     <div class="ui_header_panel" >
@@ -79,7 +79,7 @@
         this.$router.push({path:'/books'})
       },
       goCode() {
-        alert("暂未开发！")
+        this.$router.push({path:'/codeLaboratory'})
       }
 
     },
@@ -103,7 +103,7 @@
     src: url(../../../static/fonts/jpx.ttf);
   }
 
-  
+
 
 
 </style>

@@ -58,3 +58,14 @@ export const uploadBooksInfo = (params) => {
 export const queryClickHouseData = (params) => {
   return postRequest('/clickhouse/queryClickHouseData.do', params)
 }
+
+//查询clickhouse数据
+export const queryExcLog = (params) => {
+  return postRequest('/exclog/queryExcLog.do', params)
+}
+
+//上传文件接口
+export const uploadFiles = (params) => {
+  return postRequest('/upload/uploadFiles.do', params)
+}
+

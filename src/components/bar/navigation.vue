@@ -1,98 +1,71 @@
 <template>
-  <div>
-     <div class="wrapn_h">
-       <div class="childn_h ui_profile">
-         <div class="ui_pf">
-         </div>
-       </div>
-       <div class="childn_h ">
-         <div><b class="ui_name">叁拾柒</b> <b class="ui_trangl"></b></div>
-         <div class="ui_introduce">reading、writing、coding</div>
-       </div>
-     </div>
+  <div style="width: 100%;height: 100%;  display: -webkit-box;-webkit-box-orient: horizontal;margin: 10px 10px;">
      <div class="ui_nav">
        <ul class="nav">
-         <div class="ui_line"></div>
-         <li class="ui_li_tab">
-           <span>导航</span>
-         </li>
-         <li class=" ui_g " style="border-bottom: 1px solid white;">
-           <div class="ui_fst_ico ui_g_ico"></div>
-           <span>&nbsp;&nbsp;首页</span>
-         </li>
          <li class="ui_fst_p">
-           <span>组成</span>
+           <span>实验功能</span>
          </li>
-         <li class="ui_g ui_grop " @click="changeArrow($event)">
+         <li class="ui_g ui_grop " @click="changeArrow($event,'picture')">
            <div class="ui_pat_ico ui_g_ico"></div>
-           <span>&nbsp;&nbsp;分类</span>
+           <span>&nbsp;&nbsp;图片上传</span>
            <i class="icon-ctrlr ui_arrow" ></i>
          </li>
-
-         <li class="ui_g ui_grop "  @click="changeArrow($event)">
-           <div class="ui_pag_ico ui_g_ico"></div>
-           <span>&nbsp;&nbsp;页面</span>
+         <li class="ui_g ui_grop "  @click="changeArrow($event,'logs')">
+           <div class="ui_frd_ico ui_g_ico"></div>
+           <span>&nbsp;&nbsp;日志查找</span>
            <i class=" ui_arrow icon-ctrlr"></i>
          </li>
-         <li class="ui_g ui_grop " @click="changeArrow($event)">
-           <div class="ui_frd_ico ui_g_ico"></div>
-           <span>&nbsp;&nbsp;友链</span>
+         <li class="ui_g ui_grop " @click="changeArrow($event,'page')">
+           <div class="ui_pag_ico ui_g_ico"></div>
+           <span>&nbsp;&nbsp;分页查询</span>
            <i class=" ui_arrow icon-ctrlr"></i>
          </li>
        </ul>
-
-
-       <div class="ui_nav_footer">
-          <div class="ui_foot_bar">
-             <div class="ui_foot_child">
-               <ul class="ui_foot_ul">
-                 <li class="ui_foot_li ui_manage_ico"></li>
-                 <li class="ui_foot_li">管理</li>
-               </ul>
-             </div>
-             <div class="ui_foot_child">
-               <ul class="ui_foot_ul" >
-                 <li class="ui_foot_li ui_articl_ico"></li>
-                 <li class="ui_foot_li">文章</li>
-               </ul>
-             </div>
-             <div class="ui_foot_child">
-               <ul class="ui_foot_ul" >
-                 <li class="ui_foot_li ui_remark_ico"></li>
-                 <li class="ui_foot_li">评论</li>
-               </ul>
-             </div>
-          </div>
-       </div>
-
+     </div>
+     <div class="lb_context" style="width: calc( 100% - 245px );background-color:#282C35;height:1000px;" >
+       <component :is="mypicture"></component>
+       <p v-show="defaultv">hello world</p>
      </div>
    </div>
 </template>
 
 <script>
+  import picture from '../../components/laboratory/retransform.vue'
+
 export default {
   data () {
     return {
       medisArray: [],
       isRight: true,
       isDown: false,
+      mypicture:"",
+      defaultv:true
     }
   },
   methods: {
     //箭头切换
-    changeArrow: function (e) {
+    changeArrow: function (e,key) {
       let x = e.currentTarget.getElementsByClassName("icon-ctrlr");
       if(x.length>0){
         let clazz = e.currentTarget.firstElementChild.nextElementSibling.nextElementSibling.getAttribute("class");
         let newClazz = clazz.replace('icon-ctrlr','icon-ctrld')
         // console.log()
         e.currentTarget.firstElementChild.nextElementSibling.nextElementSibling.setAttribute('class',newClazz)
+        if(key=='picture'){
+          this.mypicture = picture;
+          this.defaultv = false;
+        }
       }else{
         let clazz = e.currentTarget.firstElementChild.nextElementSibling.nextElementSibling.getAttribute("class");
         let newClazz = clazz.replace('icon-ctrld','icon-ctrlr')
         // console.log()
         e.currentTarget.firstElementChild.nextElementSibling.nextElementSibling.setAttribute('class',newClazz)
+        if(key=='picture'){
+          this.mypicture = "";
+          this.defaultv = true;
+        }
       }
+
     }
   },
   mounted () {
@@ -107,6 +80,12 @@ export default {
   @import '../../../static/css/style.css';
   ul {
     padding-inline-start: 0;
+  }
+  .lb_context p{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+    color: white;
   }
 
    .ui_manage_ico {
@@ -224,8 +203,9 @@ export default {
 
   .ui_nav {
     width: 220px;
-    height: 266px;
+    height: 1000px;
     /* border: 1px solid #3CD8FF; */
+    background-color: grey;
   }
 
   .ui_name{
@@ -359,9 +339,6 @@ export default {
      -webkit-font-smoothing: antialiased;
 
  }
-
-
-
 
  .ui_login {
 
