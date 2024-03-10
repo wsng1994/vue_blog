@@ -34,8 +34,8 @@ Vue.use(Router)
 //在路由跳转的时候同一个路由多次添加是不被允许的
 //重写路由的push方法
 const VueRouterPush = Router.prototype.push
-Router.prototype.push = function push (to) {
-    return VueRouterPush.call(this, to).catch(err => err)
+Router.prototype.push = function push(to) {
+  return VueRouterPush.call(this, to).catch(err => err)
 }
 
 export default new Router({
@@ -45,11 +45,11 @@ export default new Router({
       name: 'codeLaboratory',
       component: codeLaboratory
     },
-	  {
-	    path: '/transfer',
-	    name: 'retransform',
-	    component: transfer
-	  },
+    {
+      path: '/transfer',
+      name: 'retransform',
+      component: transfer
+    },
     {
       path: '/logctx',
       name: 'logctx',
@@ -108,7 +108,7 @@ export default new Router({
     {
       path: '/page',
       // name: 'header.vue',
-      name:'homePage.vue',
+      name: 'homePage.vue',
       // component: header
       component: home
     }

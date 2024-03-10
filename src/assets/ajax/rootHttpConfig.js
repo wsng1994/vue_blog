@@ -1,4 +1,4 @@
-import { getRequest, postRequest } from './myHttp.js'
+import {getRequest, postRequest} from './myHttp.js'
 
 // 查询用户信息
 export const getUserInfo = (params) => {

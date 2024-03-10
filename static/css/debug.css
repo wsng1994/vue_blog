@@ -1,12 +1,14 @@
-*{
+* {
 
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
+
 .wrap {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
 }
+
 .child {
 
   min-height: 200px;
@@ -17,25 +19,28 @@
   font-family: Georgia;
   -webkit-box-align: center;
 }
-.child li{
+
+.child li {
   list-style: none;
 }
 
 .ui-wsng {
-  height:100%;
-  margin:0px;
+  height: 100%;
+  margin: 0px;
 }
 
-.ui-wsng-bg{
-    background-repeat:no-repeat ;
-    background-size:100% 100%;
-    background-attachment: fixed;
-    background: url("/static/img/background/bg.jpg");
+.ui-wsng-bg {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background: url("/static/img/background/bg.jpg");
 }
-.img-responsive{
+
+.img-responsive {
   width: 100%;
 }
-.ui-wsng-cl{
+
+.ui-wsng-cl {
   color: white;
   text-align: center;
 }

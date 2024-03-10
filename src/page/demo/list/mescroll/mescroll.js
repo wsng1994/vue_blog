@@ -433,7 +433,7 @@
 
   /* 触发下拉刷新 */
   MeScroll.prototype.triggerDownScroll = function () {
-	  console.log("触发下拉刷新")
+    console.log("触发下拉刷新")
     if (!this.optDown.beforeLoading(this, this.downwarp)) { // 准备触发下拉的回调,return true则处于完全自定义状态;默认return false;
       this.showDownScroll(); // 下拉刷新中...
       this.optDown.callback && this.optDown.callback(this); // 执行回调,联网加载数据
@@ -442,7 +442,7 @@
 
   /* 显示下拉进度布局 */
   MeScroll.prototype.showDownScroll = function () {
-	   console.log("显示下拉进度布局")
+    console.log("显示下拉进度布局")
     this.isDownScrolling = true; // 标记下拉中
     this.optDown.showLoading(this); // 下拉刷新中...
     this.downHight = this.optDown.offset; // 更新下拉区域高度

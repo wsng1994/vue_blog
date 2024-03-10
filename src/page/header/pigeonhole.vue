@@ -46,6 +46,7 @@
 import subjectAct from '../../components/subject/subjectAct.vue'
 import myheader from '../../components/header/myheader.vue'
 import { queryArchives } from '@/assets/ajax/rootHttpConfig'
+import Security from "./security/Security.js"
 export default {
   data () {
     return {
@@ -86,13 +87,19 @@ export default {
     },
 
     getArchives() {
-      queryArchives({
-        params:''
-      }).then((res) => {
-         this.archivesList = res.archives;
-         console.log(this.archivesList)
-        }
-      )
+      const data = '{"test":"helloworld!"}'
+      const key = '3ce10b0c846003541937a08f8c79d8edba407cc21c2c097ea0ed446308c0bc95c70197d0438eec089dbb9dcd4791a90dca743f1840da3264f9bb06b0cbe5d225'
+      let result = Security.encrypt(data,key)
+
+      console.log(result)
+
+      // queryArchives({
+      //   params:''
+      // }).then((res) => {
+      //    this.archivesList = res.archives;
+      //    console.log(this.archivesList)
+      //   }
+      // )
     },
 
     //goHomePage

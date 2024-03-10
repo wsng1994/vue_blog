@@ -19,7 +19,7 @@ exports.cssLoaders = function (options) {
     loader: 'css-loader',
     options: {
       sourceMap: options.sourceMap,
-	    minimize:true
+      minimize: true
     }
   }
 
@@ -31,7 +31,7 @@ exports.cssLoaders = function (options) {
   }
 
   // generate loader string to be used with extract text plugin
-  function generateLoaders (loader, loaderOptions) {
+  function generateLoaders(loader, loaderOptions) {
     const loaders = options.usePostCSS ? [cssLoader, postcssLoader] : [cssLoader]
 
     if (loader) {
@@ -60,7 +60,7 @@ exports.cssLoaders = function (options) {
     css: generateLoaders(),
     postcss: generateLoaders(),
     less: generateLoaders('less'),
-    sass: generateLoaders('sass', { indentedSyntax: true }),
+    sass: generateLoaders('sass', {indentedSyntax: true}),
     scss: generateLoaders('sass'),
     stylus: generateLoaders('stylus'),
     styl: generateLoaders('stylus')

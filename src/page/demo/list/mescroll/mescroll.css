@@ -114,7 +114,7 @@ body {
   min-height: 30px;
   padding: 15px 0;
   text-align: center;
-  visibility: hidden;/*代替display: none,列表快速滑动到底部能及时显示上拉加载的区域*/
+  visibility: hidden; /*代替display: none,列表快速滑动到底部能及时显示上拉加载的区域*/
 }
 
 /*下拉刷新,上拉加载--提示文本*/
@@ -126,8 +126,9 @@ body {
   color: gray;
   vertical-align: middle;
 }
+
 .mescroll-downwarp .downwarp-tip,
-.mescroll-upwarp .upwarp-tip{
+.mescroll-upwarp .upwarp-tip {
   margin-left: 8px;
 }
 
